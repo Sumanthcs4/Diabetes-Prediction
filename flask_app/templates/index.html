@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h2>Diabetes Prediction Form</h2>
+    <form action="/predict" method="POST">
+        <label for="pregnancies">Pregnancies:</label><br>
+        <input type="number" id="pregnancies" name="pregnancies" required><br><br>
+        
+        <label for="glucose">Glucose:</label><br>
+        <input type="number" id="glucose" name="glucose" required><br><br>
+        
+        <label for="blood_pressure">Blood Pressure:</label><br>
+        <input type="number" id="blood_pressure" name="blood_pressure" required><br><br>
+        
+        <label for="skin_thickness">Skin Thickness:</label><br>
+        <input type="number" id="skin_thickness" name="skin_thickness" required><br><br>
+        
+        <label for="insulin">Insulin:</label><br>
+        <input type="number" id="insulin" name="insulin" required><br><br>
+        
+        <label for="bmi">BMI:</label><br>
+        <input type="number" step="0.1" id="bmi" name="bmi" required><br><br>
+        
+        <label for="diabetes_pedigree_function">Diabetes Pedigree Function:</label><br>
+        <input type="number" step="0.01" id="diabetes_pedigree_function" name="diabetes_pedigree_function" required><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
